@@ -16,6 +16,7 @@
 		C97A7A1F24F2110900E270DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97A7A1D24F2110900E270DB /* Main.storyboard */; };
 		C97A7A2124F2110B00E270DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97A7A2024F2110B00E270DB /* Assets.xcassets */; };
 		C97A7A2424F2110B00E270DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97A7A2224F2110B00E270DB /* LaunchScreen.storyboard */; };
+		C97A7A2A24F21F9100E270DB /* KVExampleLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A7A2924F21F9100E270DB /* KVExampleLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		C97A7A2024F2110B00E270DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C97A7A2324F2110B00E270DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C97A7A2524F2110B00E270DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C97A7A2924F21F9100E270DB /* KVExampleLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVExampleLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C97A79FA24F20FDE00E270DB /* KVExampleLib.h */,
+				C97A7A2924F21F9100E270DB /* KVExampleLib.swift */,
 				C97A79FB24F20FDE00E270DB /* Info.plist */,
 			);
 			path = KVExampleLib;
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					C97A79F624F20FDE00E270DB = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					C97A7A0524F2101800E270DB = {
 						CreatedOnToolsVersion = 11.6;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97A7A2A24F21F9100E270DB /* KVExampleLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		C97A7A0024F20FDE00E270DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.KVExampleLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		C97A7A0124F20FDE00E270DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -483,6 +491,7 @@
 		C97A7A0F24F2101800E270DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KVExampleLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		C97A7A1024F2101800E270DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KVExampleLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
